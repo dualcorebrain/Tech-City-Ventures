@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  body {
+    background: radial-gradient(circle, rgba(57,0,54,1) 0%, rgba(0,0,0,1) 100%, rgba(0,25,255,1) 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    
+  }
+  .todo-app {
+    left: 100px;  
+    display: flexbox;
+    flex-direction: column;
+    justify-content: start;
+    width: 1000px;
+    min-height: 600px;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 50px;
+    padding-bottom: 64px;
+  }
+  
+  h1 {
+    margin: 64px 0;
+    font-weight: bold;
+    color: rgb(250, 204, 0);
+    font-size: 64px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #000000;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  .todo-input::placeholder {
+    color: #e2e2e2;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: rgb(96,71,0);
+    background: linear-gradient(93deg, rgb(158, 116, 0) 0%, rgb(161, 59, 0) 100%);
+    
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+  }
+  
+  .todo-input.edit {
+    border: 2px solid #149fff;
+  }
+  
+  .todo-button.edit {
+    background: rgb(255,189,0);
+    background: linear-gradient(93deg, rgba(255,189,0,1) 0%, rgb(0, 155, 93) 100%);
+
+    padding: 16px 22px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 30px;
+    color: #fff;
+  }
+  
+  .edit-icon {
+    color: #fff;
+  }
